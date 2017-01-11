@@ -1,3 +1,5 @@
+<?php
+
 function create_locations_slugs() {
 
     $regions_without_slug = Region::newInstance()->listAll();
@@ -21,3 +23,4 @@ function create_locations_slugs() {
 }
 
 osc_add_hook('admin_footer', 'create_locations_slugs');
+?>
